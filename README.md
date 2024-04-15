@@ -98,4 +98,69 @@ Analisando o heatmap, pode-se observar:
 
 Essa análise destaca que método de Trânsito é o mais utilizado para descobrir exoplanetas em diversas categorias, enquanto a Velocidade radial é especialmente eficaz para detectar Gigantes gasosos. Outros métodos têm suas próprias especializações, mas são usados em menor escala.
 
-#### 
+#### Distribuição de Planetas por Tipo
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/tipos_de_planeta.png)
+
+O gráfico utilizando para essa análise é um gráfico de barras simples, mostrando a distribuição de planetas por tipo. Cada barra representa um tipo específico de planeta (Gigante gasoso, Super Terra, Terrestre ou Tipo Netuno) e sua altura indica a contagem de exoplanetas desse tipo no conjunto de dados.
+
+Analisando os dados do gráfico, pode-se observar as seguintes conclusões sobre a distribuição de planetas por tipo:
+
+- Tipo de planeta mais comum: O tipo de planeta mais comum no conjunto de dados é o Tipo Netuno. Isso sugere que planetas semelhantes a Netuno são frequentemente encontrados em sistemas estelares.
+
+- Distribuição relativamente equilibrada entre Gigante gasoso e Super Terra: Gigante gasoso e Super Terra têm contagens semelhantes, sugerindo uma distribuição relativamente equilibrada entre esses dois tipos de planetas no conjunto de dados.
+
+- Menor quantidade de planetas terrestres: Terrestre é o tipo de planeta menos comum no conjunto de dados, com uma contagem de apenas 168 planetas. Isso sugere que planetas terrestres (semelhantes à Terra) são mais difíceis de detectar ou são menos comuns em sistemas estelares.
+
+- Equilíbrio entre os diferentes tipos de planetas: Embora o Tipo Netuno seja o mais comum, a diferença em relação aos outros tipos de planetas não é muito grande, exceto para planetas terrestres, que são significativamente menos comuns. Isso sugere uma certa diversidade na distribuição dos tipos de planetas descobertos.
+
+Esta análise mostra uma distribuição diversificada dos tipos de planetas descobertos, com o Tipo Netuno sendo o mais comum, seguido de perto por Gigante gasoso e Super Terra. Planetas terrestres são os menos comuns, indicando um possível desafio na detecção ou uma menor presença natural em sistemas estelares.
+
+#### Distribuição de planetas por método de descoberta
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/metodo_descoberta.png)
+
+O gráfico utilizando nessa análise é um gráfico de barras simples, mostrando a distribuição de planetas por método de descoberta. Cada barra representa um método específico de descoberta (Astrometria, Imagem direta, Microlente gravitacional, Trânsito ou Velocidade radial) e sua altura indica a contagem de exoplanetas descobertos por meio daquele método.
+
+Analisando os dados do gráfico, pode-se tirar as seguintes conclusões sobre a distribuição de planetas por método de descoberta:
+
+- Método de descoberta mais comum: O método de Trânsito é, de longe, o mais comum, com uma contagem de mais de 3500 planetas descobertos usando essa técnica. Isso sugere que o método de Trânsito é altamente eficaz para a descoberta de exoplanetas e tem sido amplamente utilizado nos últimos anos.
+
+- Velocidade radial em segundo lugar: O método de Velocidade radial é o segundo mais comum, com quase 1000 planetas descobertos. Embora seja menos comum que o método de Trânsito, ainda é uma técnica significativa na descoberta de exoplanetas.
+
+- Método de Microlente gravitacional: O método de Microlente gravitacional descobriu mais de 100 planetas, o que indica que, embora não seja um método tão comum quanto Trânsito ou Velocidade radial, ainda é uma técnica útil para a descoberta de exoplanetas.
+
+- Imagem direta: O método de Imagem direta descobriu menos de 100 planetas, o que sugere que essa técnica é menos comum na descoberta de exoplanetas. No entanto, pode ser eficaz em casos específicos.
+
+- Astrometria: Astrometria é o método menos comum para a descoberta de exoplanetas. Isso sugere que Astrometria não é uma técnica amplamente utilizada para a descoberta de exoplanetas atualmente.
+
+Esta análise mostra que o método de Trânsito é de longe o método mais eficaz e amplamente utilizado para a descoberta de exoplanetas. Velocidade radial é o segundo método mais comum, enquanto Microlente gravitacional, Imagem direta e Astrometria são usados com menos frequência para a descoberta de exoplanetas.
+
+#### Distribuição da Temperatura da Estrela-mãe dos Exoplanetas
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/temperatura_estrela_mae.png)
+
+Ao analisar o histograma da temperatura da estrela-mãe dos exoplanetas, pode-se observar uma distribuição distinta:
+
+- 0 a 2000 K: A contagem de temperaturas das estrelas-mães nesta faixa é muito baixa, isso sugere que poucas estrelas-mães dos exoplanetas têm temperaturas muito baixas, indicando que a maioria das estrelas-mães não são muito frias.
+
+- 2000 a 4000 K: Assim como a faixa anterior, esta também apresenta uma baixa contagem de temperaturas, isso indica que poucas estrelas-mães possuem temperaturas nessa faixa intermediária mais baixa.
+
+- 4000 a 6000 K: Este é o intervalo de temperatura com a maior concentração de estrelas-mães. As contagens nesta faixa são substanciais, indicando que a maioria das estrelas-mães dos exoplanetas tem temperaturas moderadas, centradas em torno de 5000 K.
+
+- 6000 a 8000 K: As contagens diminuem à medida que as temperaturas aumentam, com pouco mais de 400 ocorrências até faixas menores, indicando uma menor quantidade de estrelas-mães com temperaturas mais altas.
+
+Em geral, o histograma sugere que a maioria das estrelas-mães dos exoplanetas está concentrada na faixa de temperatura entre 4000 K e 6000 K, com poucos casos nas faixas mais extremas.
+
+#### Distribuição do Número de Planetas no Sistema
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/numero_planeta_sistema.png)
+
+Ao analisar o histograma, pode-se observar:
+
+- Uma grande concentração de sistemas com apenas um planeta, com quase 3000 ocorrências. À medida que o número de planetas por sistema aumenta para dois, três, ou quatro, a contagem de sistemas diminui progressivamente, com pouco mais de 1000 ocorrências para sistemas com dois planetas, quase 500 sistemas com três planetas, e menos de 250 sistemas com quatro planetas.
+
+- Nos intervalos subsequentes, que correspondem a sistemas com cinco planetas ou mais, a contagem de sistemas continua diminuindo. Isso sugere que sistemas com um grande número de planetas são muito menos comuns.
+
+Essa distribuição indica que a maioria dos sistemas estelares tende a ter apenas um planeta, sendo cada vez menos comum encontrar sistemas com um número maior de planetas.
+
