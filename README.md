@@ -164,3 +164,48 @@ Ao analisar o histograma, pode-se observar:
 
 Essa distribuição indica que a maioria dos sistemas estelares tende a ter apenas um planeta, sendo cada vez menos comum encontrar sistemas com um número maior de planetas.
 
+#### Relação entre Metalicidade e Presença de Exoplanetas
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/metalicidade_presenca_planeta.png)
+
+Nessa análise foi utilizado um gráfico de barras empilhadas que mostra a relação entre a metalicidade (Fe/H) das estrelas e a proporção de diferentes tipos de exoplanetas que orbitam essas estrelas. As barras estão organizadas por intervalos de metalicidade, indo de (-1.5, -1.0] a (1.0, 1.5].
+
+Os dados do gráfico mostram algumas tendências interessantes:
+
+- Os intervalos de metalicidade mais negativos (-1.5 a -0.5) não têm dados disponíveis sobre a presença de exoplanetas, indicando que a observação pode ser limitada ou esses intervalos podem não ser propícios para a formação de planetas.
+
+- No intervalo de metalicidade de (-0.5, 0.0], há uma distribuição relativamente equilibrada entre os tipos de exoplanetas, com uma leve predominância de exoplanetas tipo Netuno e gigantes gasosos.
+
+- No intervalo de metalicidade de (0.0, 0.5], há uma maior proporção de gigantes gasosos, seguidos por exoplanetas tipo Netuno e superterras. A proporção de planetas terrestres é significativamente menor.
+
+- No intervalo de metalicidade de (0.5, 1.0], há uma alta proporção de gigantes gasosos, sugerindo que as estrelas com metalicidade mais alta são mais propensas a hospedar gigantes gasosos.
+
+- Nos intervalos de metalicidade mais altos (1.0, 1.5], não há dados disponíveis sobre a presença de exoplanetas, semelhante aos intervalos de metalicidade mais baixos.
+
+Em geral, o gráfico sugere uma tendência de que estrelas com maior metalicidade tenham uma maior proporção de gigantes gasosos. Os outros tipos de planetas também aparecem, mas com proporções menores ou mais equilibradas em intervalos de metalicidade mais baixos.
+
+#### Mapa de Calor das Correlações entre as Características dos Exoplanetas
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/correlacoes_caracteristicas.png)
+
+Analisando o heatmap de correlações dos dados dos exoplanetas, podemos observar algumas correlações interessantes (lembre-se correlação não indica causalidade):
+
+- Raio (Jup) <-> Metalicidade (Fe/H): 0.34: Esta correlação positiva indica que exoplanetas com raios maiores tendem a estar em sistemas com maior metalicidade (conteúdo de elementos mais pesados que o hélio). Isso pode sugerir que sistemas com maior metalicidade têm uma maior probabilidade de formar exoplanetas maiores.
+
+- Raio (Jup) <-> Temperatura de equilíbrio planetário: 0.54: Há uma correlação positiva entre o raio do exoplaneta em relação a Júpiter e a temperatura de equilíbrio planetário. Isso sugere que exoplanetas maiores podem ter temperaturas de equilíbrio mais altas, possivelmente devido à maior absorção de energia de suas estrelas hospedeiras.
+
+- Idade (Gyr) <-> Temperatura (K): -0.30: Esta correlação negativa sugere que estrelas mais antigas tendem a ter temperaturas efetivas mais baixas. Isso é esperado, pois estrelas mais jovens geralmente têm temperaturas mais altas devido a processos de fusão nuclear mais intensos, enquanto estrelas mais antigas tendem a esfriar com o tempo.
+
+#### Correlação entre Período Orbital e Distância Orbital
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/correlacao_periodo_orbital_distancia_orbital.png)
+
+Para demonstrar esta correlação foi usado um scatterplot e nele é mostrado a relação entre o semieixo maior (AU) e o período orbital (dias) com uma correlação positiva muito forte de 0.80 indica uma tendência clara entre essas duas variáveis. Analisando esse gráfico, pode-se observar:
+
+- Correlação positiva muito forte: A correlação positiva de 0.80 indica uma relação direta e forte entre o semieixo maior e o período orbital. Ou seja, conforme o semieixo maior aumenta, o período orbital também tende a aumentar de forma significativa.
+
+- Distribuição dos pontos: No scatterplot, você pode observar que os pontos tendem a se alinhar em uma linha diagonal ascendendo do canto inferior esquerdo (0, 0) para o canto superior direito. Isso indica que exoplanetas com órbitas mais amplas (semieixos maiores) tendem a ter períodos orbitais mais longos.
+
+- Conformidade com a Lei de Kepler: Essa relação entre o semieixo maior e o período orbital está de acordo com a terceira lei de Kepler, que estabelece que o quadrado do período orbital é proporcional ao cubo do semieixo maior da órbita. Isso significa que, à medida que a órbita de um exoplaneta se estende, o tempo necessário para completar uma órbita ao redor de sua estrela hospedeira também aumenta.
+
+Em resumo, o scatterplot mostra uma relação clara entre o semieixo maior e o período orbital dos exoplanetas, confirmando a teoria de que exoplanetas em órbitas mais amplas levam mais tempo para completar uma órbita.
