@@ -209,3 +209,17 @@ Para demonstrar esta correlação foi usado um scatterplot e nele é mostrado a 
 - Conformidade com a Lei de Kepler: Essa relação entre o semieixo maior e o período orbital está de acordo com a terceira lei de Kepler, que estabelece que o quadrado do período orbital é proporcional ao cubo do semieixo maior da órbita. Isso significa que, à medida que a órbita de um exoplaneta se estende, o tempo necessário para completar uma órbita ao redor de sua estrela hospedeira também aumenta.
 
 Em resumo, o scatterplot mostra uma relação clara entre o semieixo maior e o período orbital dos exoplanetas, confirmando a teoria de que exoplanetas em órbitas mais amplas levam mais tempo para completar uma órbita.
+
+#### Correlação entre Temperatura da Estrela e Temperatura de Equilíbrio Planetário
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/temperatura_estrela_temperatura_equilibrio.png)
+
+Neste scatterplot, cada ponto representa um exoplaneta, onde o eixo x representa a temperatura da estrela-mãe (em Kelvin) e o eixo y representa a temperatura de equilíbrio planetário (também em Kelvin). A dispersão dos pontos no gráfico mostra a relação entre essas duas variáveis. Pode-se observar:
+
+- Padrão de dispersão dos pontos: Observa-se uma tendência de aumento da temperatura de equilíbrio planetário conforme a temperatura da estrela-mãe aumenta. Isso sugere uma correlação positiva entre essas duas variáveis.
+
+- Correlação positiva forte: A correlação entre a temperatura da estrela e a temperatura de equilíbrio planetário é de 0.61, o que indica uma correlação positiva forte. Isso significa que, em geral, quando a temperatura da estrela-mãe aumenta, a temperatura de equilíbrio planetário também tende a aumentar.
+
+- Interpretação da correlação: A forte correlação positiva entre a temperatura da estrela e a temperatura de equilíbrio planetário é esperada. A temperatura da estrela influencia diretamente a quantidade de radiação que um exoplaneta recebe, afetando sua temperatura de equilíbrio. Quanto maior a temperatura da estrela, maior será a quantidade de energia recebida pelo planeta e, portanto, maior será sua temperatura de equilíbrio.
+
+Em resumo, este scatterplot ilustra a forte relação entre a temperatura da estrela-mãe e a temperatura de equilíbrio planetário dos exoplanetas, indicando que a temperatura da estrela é um fator determinante na determinação da temperatura dos exoplanetas.
