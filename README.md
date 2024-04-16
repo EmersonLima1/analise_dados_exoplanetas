@@ -1,4 +1,8 @@
-# Análise de Dados - Exoplanetas
+<div align="center">
+
+## Além do Nosso Sol: Investigando Exoplanetas Através da Ciência de Dados
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/Default_Alien_planet_landscape_view_from_an_exoplanet_3d_rende_0(1).jpg)
 
 <div align="justify">
 
@@ -24,6 +28,32 @@ Os dados foram obtidos de duas fontes principais:
 
 Dessa forma, mesmo que o conjunto de dados contenha informações sobre uma parcela dos exoplanetas confirmados, os dados coletados e agregados permitem uma análise abrangente e representativa dos exoplanetas conhecidos até o momento.
 
+### Entendendo o conjunto de dados
+
+Entendo melhor o conjunto de dados utilizado:
+
+- Nome do exoplaneta: O nome oficial do exoplaneta.
+- Nome da estrela-mãe: O nome da estrela ao redor da qual o exoplaneta orbita.
+- Tipo de Planeta: A classificação do exoplaneta, como Gigante Gasoso, Super Terra, etc.
+- Nome do sistema: O nome do sistema estelar ao qual o exoplaneta pertence.
+- Distância (anos-luz): A distância do sistema estelar à Terra, medida em anos-luz.
+- Número de planetas no sistema: O número total de planetas conhecidos no sistema estelar.
+- Número de estrelas no sistema: O número total de estrelas no sistema estelar.
+- Ascensão reta e Declinação: As coordenadas celestes do sistema estelar.
+- Massa (Sol) e Raio (Sol): A massa e o raio da estrela-mãe, usando o Sol como referência.
+- Idade (Gyr): A idade estimada da estrela-mãe, medida em bilhões de anos.
+- Metalicidade (Fe/H): A proporção de elementos mais pesados que o hélio na estrela-mãe.
+- Tipo espectral: A classificação espectral da estrela-mãe.
+- Temperatura (K): A temperatura da estrela-mãe, medida em Kelvin.
+- Magnitude visual: A magnitude aparente da estrela-mãe, uma medida de seu brilho como visto da Terra.
+- Período orbital (dias): O tempo que o exoplaneta leva para completar uma órbita ao redor de sua estrela-mãe, medido em dias terrestres.
+- Semieixo maior (AU): A distância média do exoplaneta à sua estrela-mãe, medida em unidades astronômicas (a distância média da Terra ao Sol).
+- Excentricidade: A excentricidade da órbita do exoplaneta, uma medida de quão elíptica (em oposição a circular) é a órbita.
+- Temperatura de equilíbrio planetário: A temperatura de equilíbrio do exoplaneta, que depende da radiação que recebe de sua estrela-mãe.
+- Ano de descoberta: O ano em que o exoplaneta foi descoberto.
+- Método de descoberta: O método pelo qual o exoplaneta foi descoberto, como trânsito, velocidade radial, etc.
+- Massa (Jup), Raio (Jup), Massa (Terra), Raio (Terra): A massa e o raio do exoplaneta, usando Júpiter e a Terra como referências.
+  
 ### Limpeza e Pré-processamento de Dados
 
 Durante a fase de limpeza e pré-processamento de dados, várias etapas foram realizadas para garantir a qualidade e a consistência dos dados antes da análise:
@@ -223,3 +253,77 @@ Neste scatterplot, cada ponto representa um exoplaneta, onde o eixo x representa
 - Interpretação da correlação: A forte correlação positiva entre a temperatura da estrela e a temperatura de equilíbrio planetário é esperada. A temperatura da estrela influencia diretamente a quantidade de radiação que um exoplaneta recebe, afetando sua temperatura de equilíbrio. Quanto maior a temperatura da estrela, maior será a quantidade de energia recebida pelo planeta e, portanto, maior será sua temperatura de equilíbrio.
 
 Em resumo, este scatterplot ilustra a forte relação entre a temperatura da estrela-mãe e a temperatura de equilíbrio planetário dos exoplanetas, indicando que a temperatura da estrela é um fator determinante na determinação da temperatura dos exoplanetas.
+
+#### Conclusão desse tópico
+
+Com base nas análises realizadas sobre exoplanetas e suas características, podemos concluir que existem padrões claros e tendências significativas que podem ser observadas nas observações disponíveis. A distribuição dos tipos de planetas e dos métodos de descoberta ao longo do tempo mostra o progresso tecnológico e científico na área. As relações entre características como massa, raio, temperatura, período orbital e distâncias orbitais destacam as complexas interações entre os exoplanetas e suas estrelas-mãe. 
+
+Além disso, as correlações entre a temperatura da estrela e a temperatura de equilíbrio planetário dos exoplanetas, bem como a relação entre metalicidade e presença de exoplanetas, fornecem insights valiosos para entender a dinâmica desses sistemas. Em suma, esses dados contribuem para uma visão abrangente das propriedades e comportamentos dos exoplanetas, permitindo uma compreensão mais profunda de sua formação e evolução.
+
+### Classificação de Tipos de Exoplanetas
+
+Nesta seção do projeto, realizei a classificação dos tipos de exoplanetas com base em um conjunto de características relevantes. Para isso, utilizei um modelo de aprendizado de máquina chamado Random Forest Classifier para prever o tipo de exoplaneta com base em suas propriedades físicas.
+
+#### Processamento dos Dados
+
+Os dados foram carregados e pré-processados para a análise. Selecionamos as características mais importantes para a classificação, como o número de planetas e estrelas no sistema, a idade, a temperatura, o período orbital, entre outras propriedades relevantes para a classificação.
+
+Os dados foram divididos em um conjunto de treinamento (70% dos dados) e um conjunto de teste (30% dos dados) para avaliar o desempenho do modelo de maneira imparcial. Para lidar com valores ausentes, usamos um imputer de média, que substituiu os valores vazios pela média das respectivas colunas. Variáveis categóricas foram transformadas em variáveis numéricas utilizando a codificação one-hot, para que o modelo pudesse lidar com elas de forma eficiente.
+
+#### Treinamento e Avaliação do Modelo
+
+Usamos um modelo Random Forest com 100 estimadores para treinar os dados e prever o tipo de exoplaneta. O modelo foi avaliado por meio da métrica de acurácia, que atingiu 79,07%, indicando um bom desempenho na classificação dos tipos de exoplanetas.
+
+#### Matriz de confusão
+
+Uma matriz de confusão é uma tabela utilizada para avaliar o desempenho de um modelo de classificação, mostrando a relação entre as previsões do modelo e os valores reais das classes. A matriz de confusão foi transformada em um heatmap para facilitar a interpretação.
+
+![](https://github.com/EmersonLima1/analise_dados_exoplanetas/blob/main/Gr%C3%A1ficos%20das%20an%C3%A1lises/matriz_confusao.png)
+
+Analisando os resultados encontrados na matriz de confusão:
+
+- Verdadeiro: Gigante Gasoso
+    - Previsto: Gigante Gasoso: O modelo fez 376 previsões corretas para exoplanetas do tipo "Gigante Gasoso".
+    - Previsto: Super Terra: Apenas 3 exoplanetas do tipo "Gigante Gasoso" foram erroneamente previstos como "Super Terra".
+    - Previsto: Terrestre: O modelo não confundiu nenhum exoplaneta do tipo "Gigante Gasoso" com "Terrestre".
+    - Previsto: Tipo Netuno: 43 exoplanetas do tipo "Gigante Gasoso" foram erroneamente previstos como "Tipo Netuno".
+
+- Verdadeiro: Super Terra
+    - Previsto: Gigante Gasoso: 37 exoplanetas do tipo "Super Terra" foram erroneamente previstos como "Gigante Gasoso".
+    - Previsto: Super Terra: O modelo fez 329 previsões corretas para exoplanetas do tipo "Super Terra".
+    - Previsto: Terrestre: O modelo fez 1 previsão errada de "Super Terra" como "Terrestre".
+    - Previsto: Tipo Netuno: O modelo confundiu 88 exoplanetas do tipo "Super Terra" com "Tipo Netuno".
+
+- Verdadeiro: Terrestre
+    - Previsto: Gigante Gasoso: O modelo fez 3 previsões erradas de exoplanetas do tipo "Terrestre" como "Gigante Gasoso".
+    - Previsto: Super Terra: O modelo fez 4 previsões erradas de exoplanetas do tipo "Terrestre" como "Super Terra".
+    - Previsto: Terrestre: O modelo fez 15 previsões corretas de exoplanetas do tipo "Terrestre".
+    - Previsto: Tipo Netuno: O modelo fez 24 previsões erradas de exoplanetas do tipo "Terrestre" como "Tipo Netuno".
+
+- Verdadeiro: Tipo Netuno
+    - Previsto: Gigante Gasoso: O modelo fez 74 previsões erradas de exoplanetas do tipo "Tipo Netuno" como "Gigante Gasoso".
+    - Previsto: Super Terra: O modelo fez 26 previsões erradas de exoplanetas do tipo "Tipo Netuno" como "Super Terra".
+    - Previsto: Terrestre: O modelo não confundiu nenhum exoplaneta do tipo "Tipo Netuno" com "Terrestre".
+    - Previsto: Tipo Netuno: O modelo fez 425 previsões corretas para exoplanetas do tipo "Tipo Netuno".
+
+Em geral, o modelo teve bom desempenho na previsão das categorias "Gigante Gasoso" e "Tipo Netuno". No entanto, ele apresentou certa confusão entre as categorias "Super Terra" e "Tipo Netuno".
+
+#### Importância das features (características)
+
+A importância das características é uma medida que indica a relevância de cada variável de entrada para a previsão do modelo. No Random Forest, a importância das características é calculada com base na redução da impureza que cada característica traz durante a construção das árvores de decisão.
+
+A impureza é uma métrica que quantifica a homogeneidade das classes em um conjunto de dados. Uma redução na impureza ocorre quando uma característica consegue separar bem as classes. Quanto maior a redução da impureza trazida por uma característica, maior é a sua importância para o modelo.
+
+Nessa previsão, a característica com maior importância foi o número de planetas no sistema, seguida pela idade e pelo número de estrelas no sistema. As características associadas diretamente às propriedades dos exoplanetas, como massa e raio, tiveram menor importância relativa para a previsão.
+
+### Conclusão
+
+Neste projeto, explorei a relação entre diferentes características de exoplanetas e suas estrelas hospedeiras, aplicando métodos estatísticos e de machine learning para identificar padrões e previsões sobre os tipos de planetas encontrados. Foram analisadas várias correlações entre propriedades dos exoplanetas, como massa, raio, temperatura de equilíbrio, e características das estrelas, como temperatura e metalicidade.
+
+Os principais métodos de descoberta de exoplanetas e suas distribuições ao longo do tempo também foram examinados, fornecendo insights sobre a evolução das técnicas de observação e descoberta desses corpos celestes.
+
+Um modelo de machine learning foi treinado para classificar exoplanetas em diferentes tipos com base em suas características físicas. Embora o modelo tenha alcançado uma acurácia de 79,07%, foram identificadas algumas confusões nas previsões. Esses erros ocorreram principalmente entre os tipos de planetas com características mais similares, como "Super Terra" e "Tipo Netuno", ou "Gigante Gasoso" e "Tipo Netuno".
+
+A análise das importâncias das features mostrou que características como o número de planetas e estrelas no sistema e a idade da estrela tiveram maior influência nas previsões. Esses resultados podem orientar futuras análises e modelos para melhorar as previsões de tipos de exoplanetas.
+
+Em conclusão, o projeto trouxe contribuições valiosas para o entendimento das características dos exoplanetas e suas relações com as estrelas hospedeiras. Além disso, destacou a necessidade de refinamento dos modelos de machine learning para melhorar a precisão nas classificações, especialmente nas classes com características mais similares. O trabalho serve como uma valiosa oportunidade de aprendizado pessoal, tanto na área de dados quanto na área de astronomia, que são as duas áreas da ciência que mais me interessam.
